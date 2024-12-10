@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.table-container {
+  margin: 20px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  border: 1px solid #1b2cd3;
+  padding: 10px;
+  color: #1b2cd3;
+}
+
+thead th {
+  background-color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+
+input, select {
+  background-color: white;
+  border: 1px solid #1b2cd3;
+  border-radius: 8px;
+  padding: 5px;
+  color: #1b2cd3;
+}
+
+input[type="text"], input[type="number"], select {
+  text-align: center;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #1b2cd3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1623a6;
+}
+
+.small-text {
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+@media (max-width: 768px) {
+  table, th, td {
+    font-size: 14px;
+  }
+
+  input, select {
+    font-size: 12px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
+.watermark {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 12px;
+  color: rgba(27, 44, 211, 0.5); /* Biru dengan transparansi */
+  font-family: Arial, sans-serif;
+  z-index: 1000;
+  user-select: none; /* Tidak bisa disalin */
+  pointer-events: none; /* Tidak menghalangi interaksi */
+}
